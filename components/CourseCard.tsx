@@ -74,7 +74,7 @@ export default function CourseCard({ course }: CourseCardProps) {
             <span className="text-sm text-gray-500 font-normal ml-1">USD</span>
           </div>
           <Link 
-            href={`/courses/${course.slug}`}
+            href={`/course/${course.slug}`}
             className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
           >
             Enroll Now

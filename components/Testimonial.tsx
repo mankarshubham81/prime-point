@@ -100,7 +100,7 @@ const TestimonialCarousel: React.FC = () => {
       className="py-16 px-4 bg-gradient-to-br from-blue-50 to-slate-100 relative"
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">What Our Patients Say</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">What Our Students Say</h2>
         <p className="text-lg text-gray-600 mb-8">
           Hear from those who have experienced the healing power of homeopathy.
         </p>

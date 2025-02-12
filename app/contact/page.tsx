@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us - MyCodingCourses</title>
+        <title>Contact Us - PrimePoint</title>
       </Head>
       {/* Banner with Breadcrumbs */}
       <section className="relative">

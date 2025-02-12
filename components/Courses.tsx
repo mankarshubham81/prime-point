@@ -1,7 +1,7 @@
 // pages/courses/index.tsx
 import Head from 'next/head';
 import CourseCard from '../components/CourseCard';
-import Breadcrumbs from '../components/Breadcrumbs';
+// import Breadcrumbs from '../components/Breadcrumbs';
 
 const coursesData = [
   {
@@ -20,7 +20,7 @@ const coursesData = [
     title: 'Full Stack Java Development',
     description: 'Build enterprise applications with Spring Boot, Hibernate, React, and AWS deployment.',
     slug: 'full-stack-java',
-    image: 'https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     duration: '8 Weeks',
     difficulty: 'Intermediate',
     price: 399,
@@ -46,14 +46,14 @@ export default function CoursesPage() {
   return (
     <>
       <Head>
-        <title>Courses - MyCodingCourses</title>
+        <title>Courses - PrimePoint</title>
         <meta name="description" content="Explore our comprehensive catalog of coding and design courses" />
       </Head>
 
       {/* Enhanced Banner */}
       <section className="relative bg-gradient-to-r from-purple-600 to-blue-600">
-        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 text-center">
-          <Breadcrumbs currentPage="Courses" />
+        <div className="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:px-8 text-center">
+          {/* <Breadcrumbs currentPage="Courses" /> */}
           <h1 className="text-4xl font-extrabold text-white mt-8 mb-4">
             Transform Your Career
           </h1>

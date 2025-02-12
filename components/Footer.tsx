@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-8 text-center text-gray-400">
-        &copy; {new Date().getFullYear()} MyCodingCourses. All rights reserved.
+        &copy; {new Date().getFullYear()} PrimePoint. All rights reserved.
       </div>
     </footer>
   );

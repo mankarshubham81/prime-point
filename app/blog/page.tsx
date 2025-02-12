@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Blog - MyCodingCourses</title>
+        <title>Blog - PrimePoint</title>
       </Head>
       {/* Banner with Breadcrumbs */}
       <section className="relative">

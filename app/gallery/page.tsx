@@ -5,7 +5,7 @@ export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Gallery - MyCodingCourses</title>
+        <title>Gallery - PrimePoint</title>
       </Head>
       {/* Banner with Breadcrumbs */}
       <section className="relative">

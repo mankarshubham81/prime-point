@@ -5,7 +5,7 @@ import WhatsAppWidget from '../components/WhatsAppWidget';
 import ChatBotWidget from '../components/ChatBotWidget';
 
 export const metadata = {
-  title: 'MyCodingCourses',
+  title: 'PrimePoint',
   description: 'Learn coding with our professional courses.',
 };
 
