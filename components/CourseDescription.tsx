@@ -15,28 +15,16 @@ const CourseDescription: React.FC = () => {
             <strong>Join Prime Point Academy - Best UI UX Design Course in Pune</strong>
           </p>
           <p className="mb-4">
-            UI/UX Design is an important part of creating visually attractive and
-            user-friendly digital experiences. But what do UI and UX mean? Let’s break
-            it down!
+            UI/UX Design is an important part of creating visually attractive and user-friendly digital experiences. But what do UI and UX mean? Let&apos;s break it down!
           </p>
           <p className="mb-4">
-            <span className="font-semibold">UI (User Interface) Design:</span> It is all
-            about the overall visual appearance and the feel of the application. It
-            includes elements such as colors, typography, buttons, icons, and layout.
-            UI ensures an engaging and attractive design.
+            <span className="font-semibold">UI (User Interface) Design:</span> It is all about the overall visual appearance and the feel of the application. It includes elements such as colors, typography, buttons, icons, and layout. UI ensures an engaging and attractive design.
           </p>
           <p className="mb-4">
-            <span className="font-semibold">UX (User Experience) Design:</span> It focuses
-            on the user's experience and interactivity with the product. Its primary goal
-            is to improve ease of use &amp; accessibility, which results in great customer
-            satisfaction.
+            <span className="font-semibold">UX (User Experience) Design:</span> It focuses on the user&apos;s experience and interactivity with the product. Its primary goal is to improve ease of use &amp; accessibility, which results in great customer satisfaction.
           </p>
           <p className="mb-4">
-            Our UI UX design course in Pune provides in-depth training in tools like Figma,
-            Adobe XD, Sketch, and foundational design principles. Whether you’re a
-            beginner or an experienced designer looking to upgrade your skills, our UI/UX
-            classes are designed to help you excel through practical projects and industry
-            exposure.
+            Our UI UX design course in Pune provides in-depth training in tools like Figma, Adobe XD, Sketch, and foundational design principles. Whether you&apos;re a beginner or an experienced designer looking to upgrade your skills, our UI/UX classes are designed to help you excel through practical projects and industry exposure.
           </p>
           <ul className="list-disc list-inside mb-6">
             <li>Learn from experienced UI/UX designers.</li>
@@ -59,14 +47,10 @@ const CourseDescription: React.FC = () => {
             Industry-Oriented Full Stack Developer Course in Pune
           </h3>
           <p className="mb-4">
-            The IT industry's requirements for Full Stack Developers are very high. Our
-            Full Stack Developer course in Pune prepares students by teaching essential
-            skills in both front-end and back-end development. Our syllabus includes all
-            trending technologies as per the latest industry requirements.
+            The IT industry&apos;s requirements for Full Stack Developers are very high. Our Full Stack Developer course in Pune prepares students by teaching essential skills in both front-end and back-end development. Our syllabus includes all trending technologies as per the latest industry requirements.
           </p>
           <p className="mb-4">
-            Learn from industry expert trainers with practical training on live projects,
-            and become a professional full stack developer.
+            Learn from industry expert trainers with practical training on live projects, and become a professional full stack developer.
           </p>
           <ul className="list-disc list-inside mb-6">
             <li>Detailed training of front-end and back-end technologies.</li>
@@ -89,14 +73,10 @@ const CourseDescription: React.FC = () => {
             SAP MM and SAP FICO Course in Pune
           </h3>
           <p className="mb-4">
-            SAP serves as a crucial foundation for many businesses. To meet the needs of
-            the industry without disrupting the market and risking stable jobs, SAP training
-            is essential. Our SAP course in Pune covers both SAP MM for material management
-            and SAP FICO for financial management.
+            SAP serves as a crucial foundation for many businesses. To meet the needs of the industry without disrupting the market and risking stable jobs, SAP training is essential. Our SAP course in Pune covers both SAP MM for material management and SAP FICO for financial management.
           </p>
           <p className="mb-4">
-            Our knowledgeable instructors will equip you with the expertise needed to become
-            SAP-certified and ready for the job market.
+            Our knowledgeable instructors will equip you with the expertise needed to become SAP-certified and ready for the job market.
           </p>
           <ul className="list-disc list-inside mb-6">
             <li>Certification-oriented training with practical assignments.</li>
@@ -117,14 +97,10 @@ const CourseDescription: React.FC = () => {
         <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-4">MERN Stack Course in Pune</h3>
           <p className="mb-4">
-            Join one of the best MERN Stack classes in Pune at Prime Point Academy. The MERN
-            stack is fundamental for building high-quality websites. Our course covers
-            MongoDB, Express.js, React, and Node.js, giving you the ability to develop
-            highly-scalable web applications.
+            Join one of the best MERN Stack classes in Pune at Prime Point Academy. The MERN stack is fundamental for building high-quality websites. Our course covers MongoDB, Express.js, React, and Node.js, giving you the ability to develop highly-scalable web applications.
           </p>
           <p className="mb-4">
-            Gain hands-on experience, work on live projects, and receive industry-relevant
-            training.
+            Gain hands-on experience, work on live projects, and receive industry-relevant training.
           </p>
           <ul className="list-disc list-inside mb-6">
             <li>JavaScript fundamentals and ES6 concepts.</li>
@@ -147,16 +123,8 @@ const CourseDescription: React.FC = () => {
             Start Your IT Career with Prime Point Academy
           </h3>
           <p className="mb-6">
-            Are you serious about building a career in IT? Join our offline/online live
-            courses today and take the first step towards a successful career in UI/UX
-            Design, Full Stack Development, MERN Stack, Java, and SAP (SAP MM &amp; SAP FICO).
+            Are you serious about building a career in IT? Join our offline/online live courses today and take the first step towards a successful career in UI/UX Design, Full Stack Development, MERN Stack, Java, and SAP (SAP MM &amp; SAP FICO).
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition"
-          >
-            Contact Us
-          </a>
         </div>
       </div>
     </section>
