@@ -71,8 +71,8 @@ export default function CoursesPage() {
       </Head>
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r rounded-md from-purple-500 to-indigo-600 py-1 text-center text-white">
-        <h1 className="text-4xl font-bold mb-1">Our Trending IT Courses in Pune</h1>
+      <div className="bg-gradient-to-r rounded-md from-purple-500 to-indigo-600 py-1 mx-2 text-center text-white">
+        <h1 className="text-4xl font-bold mb-1">Our Trending IT Courses in Pune</h1>
       </div>
 
       {/* Trending Courses Section */}

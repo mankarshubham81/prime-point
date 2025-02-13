@@ -2,11 +2,10 @@ import React from 'react';
 
 const CourseDescription: React.FC = () => {
   return (
-    <section id="courses" className="py-12 bg-gray-50">
+    <section id="courses" className="py-1 shadow-lg rounded bg-gray-20">
       <div className="container mx-auto px-4">
-
         {/* UI/UX Design Course */}
-        <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
+        <article className="-lg p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-4">
             UI/UX Design Course in Pune
           </h3>
@@ -41,7 +40,7 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* Full Stack Developer Course */}
-        <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
+        <article className="p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-4">
             Industry-Oriented Full Stack Developer Course in Pune
           </h3>
@@ -67,7 +66,7 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* SAP MM and SAP FICO Course */}
-        <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
+        <article className="p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-4">
             SAP MM and SAP FICO Course in Pune
           </h3>
@@ -93,7 +92,7 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* MERN Stack Course */}
-        <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
+        <article className="p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-4">MERN Stack Course in Pune</h3>
           <p className="mb-4">
             Join one of the best MERN Stack classes in Pune at Prime Point Academy. The MERN stack is fundamental for building high-quality websites. Our course covers MongoDB, Express.js, React, and Node.js, giving you the ability to develop highly-scalable web applications.
