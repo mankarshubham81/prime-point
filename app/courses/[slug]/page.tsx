@@ -1,32 +1,21 @@
+"use client"
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { courses } from '@/data/courses';
-import { Metadata } from 'next';
-import BookDemoButton from '@/components/BookDemoButton';
+import { useParams } from 'next/navigation';
 
-type Props = {
-  params: { slug: string };
-};
+export default function CourseDetailPage() {
+  // Use `useParams` to get the dynamic route parameters
+  const params = useParams();
+  const { slug } = params;
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const course = courses.find(c => c.slug === params.slug);
-  console.log("cc",course)
-  return {
-    title: `${course?.title} | Prime Point`,
-    description: course?.description,
-  };
-}
+  // Find the course synchronously (no need for `await` here)
+  const course = courses.find((c) => c.slug === slug);
 
-export async function generateStaticParams() {
-  return courses.map(course => ({
-    slug: course.slug,
-  }));
-}
-
-export default function CoursePage({ params }: Props) {
-  const course = courses.find(c => c.slug === params.slug);
-
-  if (!course) notFound();
+  // If no course is found, trigger the `notFound()` function
+  if (!course) {
+    notFound();
+  }
 
   return (
     <main className="container mx-auto px-4 py-8">
@@ -49,10 +38,7 @@ export default function CoursePage({ params }: Props) {
             </span>
           </div>
           <p className="text-lg text-gray-600 mb-8">{course.description}</p>
-          
-          <BookDemoButton />
         </div>
-
         <div className="space-y-8">
           {course.prerequisites && (
             <div>
@@ -64,7 +50,6 @@ export default function CoursePage({ params }: Props) {
               </ul>
             </div>
           )}
-
           <div>
             <h2 className="text-2xl font-semibold mb-4">Course Syllabus</h2>
             <div className="space-y-2">
@@ -75,7 +60,6 @@ export default function CoursePage({ params }: Props) {
               ))}
             </div>
           </div>
-
           {course.benefits && (
             <div>
               <h2 className="text-2xl font-semibold mb-4">Course Benefits</h2>

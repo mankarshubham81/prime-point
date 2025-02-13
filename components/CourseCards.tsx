@@ -1,30 +1,35 @@
+// components/CourseCard.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 import { StarIcon, ClockIcon, UserGroupIcon } from '@heroicons/react/24/solid';
+import { Course } from '@/types/course';
 
-interface Course {
-  title: string;
-  description: string;
-  slug: string;
-  image: string;
-  duration: string;
-  difficulty: string;
-  price: number;
-  rating: number;
-  studentsEnrolled: number;
-  bestseller?: boolean;
-}
+// interface Course {
+//   title: string;
+//   description: string;
+//   slug: string;
+//   image?: string; // Make image optional
+//   duration: string;
+//   difficulty: string;
+//   price: number;
+//   rating: number;
+//   studentsEnrolled: number;
+//   bestseller?: boolean;
+// }
 
 interface CourseCardProps {
   course: Course;
 }
 
 export default function CourseCard({ course }: CourseCardProps) {
+  const fallbackImage =
+    'https://via.placeholder.com/400'; // Fallback image URL
+
   return (
     <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out overflow-hidden">
       <div className="relative h-48 w-full">
-        <Image 
-          src={course.image} 
+        <Image
+          src={course.image || fallbackImage} // Use fallback if image is undefined
           alt={course.title}
           fill
           className="object-cover rounded-t-xl"
@@ -35,7 +40,6 @@ export default function CourseCard({ course }: CourseCardProps) {
           </div>
         )}
       </div>
-
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
           <span className="text-sm font-medium text-purple-600">
@@ -48,15 +52,10 @@ export default function CourseCard({ course }: CourseCardProps) {
             </span>
           </div>
         </div>
-
         <h3 className="text-xl font-bold mb-2 hover:text-purple-600 transition-colors">
-          <Link href={`/courses/${course.slug}`}>
-            {course.title}
-          </Link>
+          <Link href={`/courses/${course.slug}`}>{course.title}</Link>
         </h3>
-        
         <p className="text-gray-600 mb-4">{course.description}</p>
-
         <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
           <div className="flex items-center">
             <ClockIcon className="h-5 w-5 mr-1" />
@@ -64,20 +63,19 @@ export default function CourseCard({ course }: CourseCardProps) {
           </div>
           <div className="flex items-center">
             <UserGroupIcon className="h-5 w-5 mr-1" />
-            <span>{course.studentsEnrolled.toLocaleString()}+ students</span>
+            <span>{100}+ students</span>
           </div>
         </div>
-
         <div className="flex items-center justify-between border-t pt-4">
           <div className="text-2xl font-bold text-gray-800">
             ${course.price}
             <span className="text-sm text-gray-500 font-normal ml-1">USD</span>
           </div>
-          <Link 
+          <Link
             href={`/courses/${course.slug}`}
             className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
           >
-            Enroll Now
+            View Details
           </Link>
         </div>
       </div>

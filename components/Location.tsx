@@ -6,7 +6,7 @@ const GoogleMap: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">
-          Our Coding Class Location
+          Our Acadamy Location
         </h2>
 
         {/* Two Column Layout */}

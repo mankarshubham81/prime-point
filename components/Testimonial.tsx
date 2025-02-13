@@ -16,26 +16,42 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Rahul Sharma",
+    name: "Amit Patil",
     feedback:
-      "I had been struggling with chronic allergies for years. Dr. Poonam’s treatment brought significant relief, and I feel much healthier now!",
+      "Prime Point Academy offers the best full stack developer course in Pune. My trainers are professionals and experts in their fields, they are also very helpful and provide me live projects for practice. With their support in job placement, I got a job at a leading IT company.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
   },
   {
     id: 2,
-    name: "Neha Verma",
+    name: "Pooja Desle",
     feedback:
-      "Coding has truly changed my life. My migraines have reduced drastically, and I no longer rely on painkillers!",
+      "I joined the UI UX course in Pune at Prime Point Academy, and it was the best decision! The faculty is amazing, and they focus on practical learning. The design projects helped me build an impressive portfolio. I got a job as a UI/UX designer in a reputed MNC.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    rating: 4.5,
+    rating: 5,
   },
   {
     id: 3,
-    name: "Amit Patel",
+    name: "Rahul More",
     feedback:
-      "I was skeptical at first, but homeopathy worked wonders for my skin issues. My confidence is back, and I feel great!",
+      "The MERN stack course in Pune at Prime Point Academy is fantastic! The trainers provided industry knowledge and the live projects helped me build strong development skills. With these skills, I got hired as a MERN stack developer.",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Snehal Kulkarni",
+    feedback:
+      "I was in search of the best SAP FICO course in Pune and Prime Point Academy exceeded my expectations. The course was practical and the expert teachers were extremely helpful. I received a certificate for the successful training and secured a position at a renowned MNC with their placement support.",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Vikram Desai",
+    feedback:
+      "For those interested in learning the SAP MM course in Pune, this is the best institute. The practical sessions, case studies, and expert trainers make learning easy. I am now working as an SAP MM consultant, thanks to Prime Point Academy.",
+    image: "https://randomuser.me/api/portraits/men/85.jpg",
     rating: 5,
   },
 ];
@@ -102,7 +118,7 @@ const TestimonialCarousel: React.FC = () => {
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">What Our Students Say</h2>
         <p className="text-lg text-gray-600 mb-8">
-          Hear from those who have experienced the healing power of homeopathy.
+          Hear from our students in Pune who have transformed their careers with Prime Point Academy.
         </p>
       </div>
       <div className="relative max-w-2xl mx-auto overflow-hidden">

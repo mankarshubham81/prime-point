@@ -1,14 +1,15 @@
-// pages/courses/index.tsx
 import Head from 'next/head';
 import CourseCard from '../components/CourseCard';
-// import Breadcrumbs from '../components/Breadcrumbs';
+import Link from 'next/link';
 
 const coursesData = [
   {
     title: 'UI/UX Masterclass',
-    description: 'Complete design system for web & mobile applications with Figma, Adobe XD, and prototyping.',
+    description:
+      'Complete design system for web & mobile applications with Figma, Adobe XD, and prototyping.',
     slug: 'ui-ux-web-design',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     duration: '6 Weeks',
     difficulty: 'Beginner',
     price: 299,
@@ -18,9 +19,11 @@ const coursesData = [
   },
   {
     title: 'Full Stack Java Development',
-    description: 'Build enterprise applications with Spring Boot, Hibernate, React, and AWS deployment.',
+    description:
+      'Build enterprise applications with Spring Boot, Hibernate, React, and AWS deployment.',
     slug: 'full-stack-java',
-    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     duration: '8 Weeks',
     difficulty: 'Intermediate',
     price: 399,
@@ -30,45 +33,74 @@ const coursesData = [
   },
   {
     title: 'MERN Stack Pro',
-    description: 'Master MongoDB, Express, React, and Node.js with real-world e-commerce project.',
+    description:
+      'Master MongoDB, Express, React, and Node.js with real-world e-commerce project.',
     slug: 'mern-stack',
-    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image:
+      'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     duration: '10 Weeks',
     difficulty: 'Advanced',
     price: 449,
     rating: 4.9,
     studentsEnrolled: 13420,
   },
-  // Add more courses with similar structure...
 ];
 
 export default function CoursesPage() {
   return (
     <>
       <Head>
-        <title>Courses - PrimePoint</title>
-        <meta name="description" content="Explore our comprehensive catalog of coding and design courses" />
+        <title>Best UI/UX, Full Stack & SAP Courses in Pune | PrimePoint Academy</title>
+        <meta
+          name="description"
+          content="Join Pune's top-rated UI/UX Design, Full Stack Development, MERN Stack, SAP MM & FICO courses with live projects, 1:1 mentorship, and 100% placement support. Become industry-ready with expert-led training."
+        />
+        <meta
+          name="keywords"
+          content="UI UX Course Pune, Full Stack Developer Course, MERN Stack Classes, SAP MM Training, SAP FICO Course, Best IT Academy Pune"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Best UI/UX, Full Stack & SAP Courses in Pune | PrimePoint Academy" />
+        <meta
+          property="og:description"
+          content="Join Pune's top-rated UI/UX Design, Full Stack Development, MERN Stack, SAP MM & FICO courses with live projects, 1:1 mentorship, and 100% placement support."
+        />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://example.com/courses" />
+        <meta property="og:type" content="website" />
       </Head>
 
-      {/* Enhanced Banner */}
-      <section className="relative bg-gradient-to-r from-purple-600 to-blue-600">
-        <div className="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:px-8 text-center">
-          {/* <Breadcrumbs currentPage="Courses" /> */}
-          <h1 className="text-4xl font-extrabold text-white mt-8 mb-4">
-            Transform Your Career
-          </h1>
-          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
-            Learn from industry experts with real-world projects and 1:1 mentorship
-          </p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r rounded-md from-purple-500 to-indigo-600 py-2 text-center text-white">
+        <h1 className="text-4xl font-bold mb-1">Top-Rated IT Courses in Pune</h1>
+        <h2 className="text-3xl font-bold text-center mb-2">
+          Our Trending Courses
+        </h2>
+      </div>
 
-      {/* Courses Grid */}
-      <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* Trending Courses Section */}
+      <section
+        id="courses-grid"
+        className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
+        aria-label="Course Catalog"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {coursesData.map((course) => (
-            <CourseCard key={course.slug} course={course} />
+            <CourseCard
+              key={course.slug}
+              course={course}
+              aria-label={`Course details for ${course.title}`}
+            />
           ))}
+        </div>
+        <div className="flex justify-center pt-8">
+          <Link
+            href="/courses"
+            className="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-200"
+            aria-label="Explore available courses"
+          >
+            Explore All Courses
+          </Link>
         </div>
       </section>
     </>

@@ -8,7 +8,7 @@ import Image from 'next/image';
 const coursesList = [
   { title: 'UI UX Web Design', slug: 'ui-ux-web-design' },
   { title: 'Full Stack Java', slug: 'full-stack-java' },
-  { title: 'MERN Stack', slug: 'mern-stack' },
+  { title: 'MERN Stack', slug: 'introduction-to-react' },
   { title: 'Full Stack Python', slug: 'full-stack-python' },
   { title: 'Data Science', slug: 'data-science' },
   { title: 'Data Analyst', slug: 'data-analyst' },
@@ -115,7 +115,7 @@ export default function Navbar() {
                     {coursesList.map((course) => (
                       <li key={course.slug}>
                         <Link
-                          href={`/course/${course.slug}`}
+                          href={`/courses/${course.slug}`}
                           className="px-4 py-3 hover:bg-blue-50 block transition-colors text-gray-700 hover:text-blue-600 text-sm"
                           onClick={() => setCourseDropdown(false)}
                         >
@@ -256,7 +256,7 @@ export default function Navbar() {
                             {coursesList.map((course) => (
                               <Link
                                 key={course.slug}
-                                href={`/course/${course.slug}`}
+                                href={`/courses/${course.slug}`}
                                 className="block py-2 px-4 hover:bg-gray-50 rounded-lg text-gray-600 text-sm"
                                 onClick={() => {
                                   setCourseDropdown(false)

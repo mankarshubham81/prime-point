@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        '200': '200ms',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
