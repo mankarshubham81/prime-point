@@ -72,7 +72,7 @@ export default function CoursesPage() {
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r rounded-md from-purple-500 to-indigo-600 py-2 text-center text-white">
-        <h1 className="text-4xl font-bold mb-1">Top-Rated IT Courses in Pune</h1>
+        <h1 className="text-4xl font-bold mb-1">Our Trending IT Courses in Pune</h1>
         <h2 className="text-3xl font-bold text-center mb-2">
           Our Trending Courses
         </h2>
