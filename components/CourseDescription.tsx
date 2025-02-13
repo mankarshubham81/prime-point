@@ -4,7 +4,6 @@ const CourseDescription: React.FC = () => {
   return (
     <section id="courses" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Courses</h2>
 
         {/* UI/UX Design Course */}
         <article className="bg-white shadow-lg rounded-lg p-8 mb-12">
