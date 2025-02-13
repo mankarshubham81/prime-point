@@ -18,7 +18,7 @@ const coursesData = [
     bestseller: true,
   },
   {
-    title: 'Full Stack Java Development',
+    title: 'Java Development',
     description:
       'Build enterprise applications with Spring Boot, Hibernate, React, and AWS deployment.',
     slug: 'full-stack-java',

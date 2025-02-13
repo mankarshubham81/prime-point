@@ -29,18 +29,23 @@ export default function CourseCard({ course }: CourseCardProps) {
           fill
           className="object-cover rounded-t-xl"
         />
-        {course.bestseller && (
+        {/* {course.bestseller && (
           <div className="absolute top-2 left-2 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
             Bestseller
           </div>
-        )}
+        )} */}
       </div>
 
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-sm font-medium text-purple-600">
+          {/* <span className="text-sm font-medium text-purple-600">
             {course.difficulty}
-          </span>
+          </span> */}
+          <h3 className="text-xl font-bold mb-2 hover:text-purple-600 transition-colors">
+            <Link href={`/courses/${course.slug}`}>
+              {course.title}
+            </Link>
+          </h3>
           <div className="flex items-center">
             <StarIcon className="h-5 w-5 text-yellow-400" />
             <span className="ml-1 text-gray-600">
@@ -49,11 +54,6 @@ export default function CourseCard({ course }: CourseCardProps) {
           </div>
         </div>
 
-        <h3 className="text-xl font-bold mb-2 hover:text-purple-600 transition-colors">
-          <Link href={`/courses/${course.slug}`}>
-            {course.title}
-          </Link>
-        </h3>
         
         <p className="text-gray-600 mb-4">{course.description}</p>
 
@@ -69,17 +69,17 @@ export default function CourseCard({ course }: CourseCardProps) {
         </div>
 
         <div className="flex items-center justify-between border-t pt-4">
-          <div className="text-2xl font-bold text-gray-800">
+          {/* <div className="text-2xl font-bold text-gray-800">
             ${course.price}
             <span className="text-sm text-gray-500 font-normal ml-1">USD</span>
-          </div>
+          </div> */}
+        </div>
           <Link 
             href={`/courses/${course.slug}`}
             className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
           >
             Enroll Now
           </Link>
-        </div>
       </div>
     </div>
   );
