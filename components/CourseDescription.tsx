@@ -5,8 +5,8 @@ const CourseDescription: React.FC = () => {
     <section id="courses" className="py-1 shadow-lg rounded bg-gray-20">
       <div className="container mx-auto px-4">
         {/* UI/UX Design Course */}
-        <article className="-lg p-8 mb-12">
-          <h3 className="text-2xl font-semibold mb-4">
+        <article className="-lg p-8 mb-2">
+          <h3 className="text-2xl font-semibold mb-2">
             UI/UX Design Course in Pune
           </h3>
           <p className="mb-4">
@@ -40,8 +40,8 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* Full Stack Developer Course */}
-        <article className="p-8 mb-12">
-          <h3 className="text-2xl font-semibold mb-4">
+        <article className="p-8 mb-2">
+          <h3 className="text-2xl font-semibold mb-2">
             Industry-Oriented Full Stack Developer Course in Pune
           </h3>
           <p className="mb-4">
@@ -66,8 +66,8 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* SAP MM and SAP FICO Course */}
-        <article className="p-8 mb-12">
-          <h3 className="text-2xl font-semibold mb-4">
+        <article className="p-8 mb-1">
+          <h3 className="text-2xl font-semibold mb-2">
             SAP MM and SAP FICO Course in Pune
           </h3>
           <p className="mb-4">
@@ -76,7 +76,7 @@ const CourseDescription: React.FC = () => {
           <p className="mb-4">
             Our knowledgeable instructors will equip you with the expertise needed to become SAP-certified and ready for the job market.
           </p>
-          <ul className="list-disc list-inside mb-6">
+          <ul className="list-disc list-inside mb-2">
             <li>Certification-oriented training with practical assignments.</li>
             <li>Expert-led classes with real-time case studies.</li>
             <li>Placement assistance with interview preparation.</li>
@@ -92,8 +92,8 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* MERN Stack Course */}
-        <article className="p-8 mb-12">
-          <h3 className="text-2xl font-semibold mb-4">MERN Stack Course in Pune</h3>
+        <article className="p-8 mb-1">
+          <h3 className="text-2xl font-semibold mb-2">MERN Stack Course in Pune</h3>
           <p className="mb-4">
             Join one of the best MERN Stack classes in Pune at Prime Point Academy. The MERN stack is fundamental for building high-quality websites. Our course covers MongoDB, Express.js, React, and Node.js, giving you the ability to develop highly-scalable web applications.
           </p>
@@ -115,8 +115,21 @@ const CourseDescription: React.FC = () => {
           </a>
         </article>
 
+        <article className="p-8 mb-1">
+          <h3 className="text-2xl font-semibold mb-4">Why Choose Prime Point Academy?</h3>
+          <ul className="list-disc list-inside mb-6">
+            <li>100% Placement Assistance with tie-ups in top IT companies.</li>
+            <li>Experienced Industry Trainers to ensure quality education.</li>
+            <li>Real-world Projects and case studies for hands-on learning.</li>
+            <li>Flexible Learning Options – classroom and online training available.</li>
+            <li>Affordable Fee Structure with easy installment options.</li>
+            <li>Career Guidance & Mentorship for lifelong career support.</li>
+            <li>Soft Skills training & Interview Preparation for better job prospects.</li>
+          </ul>
+        </article>
+
         {/* Call to Action */}
-        <div className="text-center mt-16">
+        <div className="mt-1">
           <h3 className="text-2xl font-semibold mb-4">
             Start Your IT Career with Prime Point Academy
           </h3>
