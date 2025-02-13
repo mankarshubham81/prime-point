@@ -5,11 +5,13 @@ import Courses from '../components/Courses'
 import Testimonial from '../components/Testimonial'
 import Location from '../components/Location'
 import FaqSection from '../components/FaqSection'
+import CourseDescription from '@/components/CourseDescription'
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
+      <CourseDescription/>
       
       <div className="container mx-auto px-4 py-8">
         <Courses />
