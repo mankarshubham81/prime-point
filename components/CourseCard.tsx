@@ -76,7 +76,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         </div>
           <Link 
             href={`/courses/${course.slug}`}
-            className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+            className="bg-[#1088ca] text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
           >
             Enroll Now
           </Link>

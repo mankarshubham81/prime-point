@@ -21,7 +21,7 @@ const GoogleMap: React.FC = () => {
               href="https://www.google.com/maps/dir//%2302+92+Serangoon+Rd+Singapore+217997/@1.3067634,103.8520901,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31da19b895f6abbb:0x9317a36aa599bf0!2m2!1d103.8520901!2d1.3067634?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+              className="inline-block px-6 py-3 bg-[#0b5fa4] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
             >
               Get Directions →
             </a>

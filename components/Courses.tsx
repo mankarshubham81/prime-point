@@ -71,7 +71,7 @@ export default function CoursesPage() {
       </Head>
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r rounded-md from-purple-500 to-indigo-600 py-1 mx-2 text-center text-white">
+      <div className="bg-gradient-to-r rounded-md from-[#0b5fa4] to-[#0d4186] py-1 md:mx-28 text-center text-white">
         <h1 className="text-4xl font-bold mb-1">Our Trending IT Courses in Pune</h1>
       </div>
 
@@ -93,7 +93,7 @@ export default function CoursesPage() {
         <div className="flex justify-center pt-8">
           <Link
             href="/courses"
-            className="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-200"
+            className="inline-block bg-[#0b7bb8] text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-200"
             aria-label="Explore available courses"
           >
             Explore All Courses

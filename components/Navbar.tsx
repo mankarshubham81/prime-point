@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter, FaBars, FaTimes } from 'react-icons/fa'
 import Image from 'next/image';
@@ -18,22 +18,28 @@ const coursesList = [
 export default function Navbar() {
   const [courseDropdown, setCourseDropdown] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const dropdownRef = useRef<HTMLLIElement | null>(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const dropdownRef = useRef<HTMLLIElement | null>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setCourseDropdown(false)
-      }
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
-        setIsMobileMenuOpen(false)
-      }
-    }
+  // useEffect(() => {
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+  //       setCourseDropdown(false)
+  //     }
+  //     if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+  //       setIsMobileMenuOpen(false)
+  //     }
+  //   }
 
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
+  //   document.addEventListener('mousedown', handleClickOutside)
+  //   return () => document.removeEventListener('mousedown', handleClickOutside)
+  // }, [])
+
+  // Toggle the dropdown state on click
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prevState) => !prevState);
+  };
 
   const navbarVariants = {
     hidden: { opacity: 0 },
@@ -84,18 +90,19 @@ export default function Navbar() {
             
             <li 
               className="relative" 
-              ref={dropdownRef}
-              onMouseEnter={() => setCourseDropdown(true)}
-              onMouseLeave={() => setTimeout(() => setCourseDropdown(false), 200)}
+              onClick={toggleDropdown}
+              // ref={dropdownRef}
+              // onMouseEnter={() => setCourseDropdown(true)}
+              // onMouseLeave={() => setTimeout(() => setCourseDropdown(false), 300)}
             >
               <button
-                className="hover:text-blue-600 transition-colors flex items-center gap-1 font-medium text-gray-700 hover:text-blue-600"
+                className="hover:text-blue-600 transition-colors flex items-center gap-1 font-medium text-gray-700"
                 aria-haspopup="true"
-                aria-expanded={courseDropdown}
+                aria-expanded={isDropdownOpen}
               >
                 Courses
                 <motion.span
-                  animate={{ rotate: courseDropdown ? 180 : 0 }}
+                  animate={{ rotate: isDropdownOpen ? 180 : 0 }}
                   className="ml-1 text-sm"
                 >
                   ▼
@@ -103,7 +110,7 @@ export default function Navbar() {
               </button>
               
               <AnimatePresence>
-                {courseDropdown && (
+                {isDropdownOpen && (
                   <motion.ul
                     initial="hidden"
                     animate="visible"
@@ -129,17 +136,17 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/gallery" className="hover:text-blue-600 transition-colors font-medium text-gray-700 hover:text-blue-600">
+              <Link href="/gallery" className="hover:text-blue-600 transition-colors font-medium text-gray-700 ">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors font-medium text-gray-700 hover:text-blue-600">
+              <Link href="/blog" className="hover:text-blue-600 transition-colors font-medium text-gray-700 ">
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-blue-600 transition-colors font-medium text-gray-700 hover:text-blue-600">
+              <Link href="/contact" className="hover:text-blue-600 transition-colors font-medium text-gray-700 ">
                 Contact
               </Link>
             </li>
@@ -163,7 +170,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg font-medium transform hover:-translate-y-0.5"
+              className="bg-[#0d4186] text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg font-medium transform hover:-translate-y-0.5"
             >
               Book Free Demo
             </Link>

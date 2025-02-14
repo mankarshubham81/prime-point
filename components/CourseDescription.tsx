@@ -2,140 +2,96 @@ import React from 'react';
 
 const CourseDescription: React.FC = () => {
   return (
-    <section id="courses" className="py-1 shadow-lg rounded bg-gray-20">
-      <div className="container mx-auto px-4">
+    <section id="courses" className="py-1 bg-white shadow-lg rounded">
+      <div className="container mx-auto px-4 lg:px-20">
         {/* UI/UX Design Course */}
-        <article className="-lg p-8 mb-2">
-          <h3 className="text-2xl font-semibold mb-2">
-            UI/UX Design Course in Pune
-          </h3>
+        <article className="p-8 mb-1 ">
+          <h3 className="text-3xl font-semibold mb-6">UI/UX Design Course in Pune</h3>
+          <p className="font-semibold text-lg mb-4">Join Prime Point Academy - Best UI/UX Design Course in Pune</p>
           <p className="mb-4">
-            <strong>Join Prime Point Academy - Best UI UX Design Course in Pune</strong>
+            UI/UX Design is an essential part of creating visually appealing and user-friendly digital experiences. Let's break it down!
           </p>
           <p className="mb-4">
-            UI/UX Design is an important part of creating visually attractive and user-friendly digital experiences. But what do UI and UX mean? Let&apos;s break it down!
+            <span className="font-semibold">UI (User Interface) Design:</span> Focuses on the visual aspects like colors, typography, buttons, and layout to create engaging designs.
           </p>
           <p className="mb-4">
-            <span className="font-semibold">UI (User Interface) Design:</span> It is all about the overall visual appearance and the feel of the application. It includes elements such as colors, typography, buttons, icons, and layout. UI ensures an engaging and attractive design.
+            <span className="font-semibold">UX (User Experience) Design:</span> Enhances user interaction and accessibility for better customer satisfaction.
           </p>
           <p className="mb-4">
-            <span className="font-semibold">UX (User Experience) Design:</span> It focuses on the user&apos;s experience and interactivity with the product. Its primary goal is to improve ease of use &amp; accessibility, which results in great customer satisfaction.
+            This course covers tools like Figma, Adobe XD, and Sketch, helping you build a strong foundation with real-world projects.
           </p>
-          <p className="mb-4">
-            Our UI UX design course in Pune provides in-depth training in tools like Figma, Adobe XD, Sketch, and foundational design principles. Whether you&apos;re a beginner or an experienced designer looking to upgrade your skills, our UI/UX classes are designed to help you excel through practical projects and industry exposure.
-          </p>
-          <ul className="list-disc list-inside mb-6">
+          <ul className="list-disc list-inside mb-6 space-y-2">
             <li>Learn from experienced UI/UX designers.</li>
             <li>Work on live projects and case studies.</li>
             <li>Placement support with portfolio building.</li>
-            <li>Master industry-standard tools like Figma and Adobe XD.</li>
+            <li>Master industry-standard tools.</li>
           </ul>
-          <a
-            href="/brochures/ui-ux-design.pdf"
-            download
-            className="inline-block bg-blue-600 text-white px-5 py-3 rounded hover:bg-blue-700 transition"
-          >
+          <a href="/brochures/ui-ux-design.pdf" download className="inline-block bg-[#0d4186] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             Download Brochure
           </a>
         </article>
 
         {/* Full Stack Developer Course */}
-        <article className="p-8 mb-2">
-          <h3 className="text-2xl font-semibold mb-2">
-            Industry-Oriented Full Stack Developer Course in Pune
-          </h3>
+        <article className="p-8 mb-1">
+          <h3 className="text-3xl font-semibold mb-6">Industry-Oriented Full Stack Developer Course in Pune</h3>
           <p className="mb-4">
-            The IT industry&apos;s requirements for Full Stack Developers are very high. Our Full Stack Developer course in Pune prepares students by teaching essential skills in both front-end and back-end development. Our syllabus includes all trending technologies as per the latest industry requirements.
+            Learn front-end and back-end technologies from expert trainers, with practical training on live projects.
           </p>
-          <p className="mb-4">
-            Learn from industry expert trainers with practical training on live projects, and become a professional full stack developer.
-          </p>
-          <ul className="list-disc list-inside mb-6">
-            <li>Detailed training of front-end and back-end technologies.</li>
-            <li>Practical training through real-world live projects.</li>
-            <li>Career guidance and soft skills training.</li>
-            <li>Access to industry expert mentors and one-on-one sessions.</li>
+          <ul className="list-disc list-inside mb-6 space-y-2">
+            <li>Comprehensive front-end and back-end training.</li>
+            <li>Hands-on projects with real-world scenarios.</li>
+            <li>Soft skills training and career guidance.</li>
           </ul>
-          <a
-            href="/brochures/full-stack-developer.pdf"
-            download
-            className="inline-block bg-blue-600 text-white px-5 py-3 rounded hover:bg-blue-700 transition"
-          >
+          <a href="/brochures/full-stack-developer.pdf" download className="inline-block bg-[#0d4186] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             Download Brochure
           </a>
         </article>
 
         {/* SAP MM and SAP FICO Course */}
-        <article className="p-8 mb-1">
-          <h3 className="text-2xl font-semibold mb-2">
-            SAP MM and SAP FICO Course in Pune
-          </h3>
-          <p className="mb-4">
-            SAP serves as a crucial foundation for many businesses. To meet the needs of the industry without disrupting the market and risking stable jobs, SAP training is essential. Our SAP course in Pune covers both SAP MM for material management and SAP FICO for financial management.
-          </p>
-          <p className="mb-4">
-            Our knowledgeable instructors will equip you with the expertise needed to become SAP-certified and ready for the job market.
-          </p>
-          <ul className="list-disc list-inside mb-2">
-            <li>Certification-oriented training with practical assignments.</li>
-            <li>Expert-led classes with real-time case studies.</li>
+        <article className=" p-8 mb-1">
+          <h3 className="text-3xl font-semibold mb-6">SAP MM and SAP FICO Course in Pune</h3>
+          <p className="mb-4">Gain expertise in SAP MM (Material Management) and SAP FICO (Financial Management) with job-oriented training.</p>
+          <ul className="list-disc list-inside mb-6 space-y-2">
+            <li>Certification-oriented training with case studies.</li>
+            <li>Expert-led classes with real-world assignments.</li>
             <li>Placement assistance with interview preparation.</li>
-            <li>High-paying career opportunities in top MNCs.</li>
           </ul>
-          <a
-            href="/brochures/sap-mm-fico.pdf"
-            download
-            className="inline-block bg-blue-600 text-white px-5 py-3 rounded hover:bg-blue-700 transition"
-          >
+          <a href="/brochures/sap-mm-fico.pdf" download className="inline-block bg-[#0d4186] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             Download Brochure
           </a>
         </article>
 
         {/* MERN Stack Course */}
-        <article className="p-8 mb-1">
-          <h3 className="text-2xl font-semibold mb-2">MERN Stack Course in Pune</h3>
-          <p className="mb-4">
-            Join one of the best MERN Stack classes in Pune at Prime Point Academy. The MERN stack is fundamental for building high-quality websites. Our course covers MongoDB, Express.js, React, and Node.js, giving you the ability to develop highly-scalable web applications.
-          </p>
-          <p className="mb-4">
-            Gain hands-on experience, work on live projects, and receive industry-relevant training.
-          </p>
-          <ul className="list-disc list-inside mb-6">
-            <li>JavaScript fundamentals and ES6 concepts.</li>
-            <li>Developing single-page applications (SPAs) using React.js.</li>
-            <li>Back-end development using Node.js and Express.js.</li>
-            <li>Database management with MongoDB and Mongoose.</li>
+        <article className=" p-8 mb-1 ">
+          <h3 className="text-3xl font-semibold mb-6">MERN Stack Course in Pune</h3>
+          <p className="mb-4">Master MongoDB, Express.js, React, and Node.js with hands-on experience and live projects.</p>
+          <ul className="list-disc list-inside mb-6 space-y-2">
+            <li>In-depth JavaScript and ES6 training.</li>
+            <li>React.js for building modern single-page applications.</li>
+            <li>Backend development using Node.js and Express.js.</li>
+            <li>Database management with MongoDB.</li>
           </ul>
-          <a
-            href="/brochures/mern-stack.pdf"
-            download
-            className="inline-block bg-blue-600 text-white px-5 py-3 rounded hover:bg-blue-700 transition"
-          >
+          <a href="/brochures/mern-stack.pdf" download className="inline-block bg-[#0d4186] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             Download Brochure
           </a>
         </article>
 
-        <article className="p-8 mb-1">
-          <h3 className="text-2xl font-semibold mb-4">Why Choose Prime Point Academy?</h3>
-          <ul className="list-disc list-inside mb-6">
-            <li>100% Placement Assistance with tie-ups in top IT companies.</li>
-            <li>Experienced Industry Trainers to ensure quality education.</li>
-            <li>Real-world Projects and case studies for hands-on learning.</li>
-            <li>Flexible Learning Options – classroom and online training available.</li>
-            <li>Affordable Fee Structure with easy installment options.</li>
-            <li>Career Guidance & Mentorship for lifelong career support.</li>
-            <li>Soft Skills training & Interview Preparation for better job prospects.</li>
+        {/* Why Choose Prime Point Academy */}
+        <article className=" p-8 mb-1 ">
+          <h3 className="text-3xl font-semibold mb-6">Why Choose Prime Point Academy?</h3>
+          <ul className="list-disc list-inside mb-6 space-y-2">
+            <li>100% Placement Assistance with top IT companies.</li>
+            <li>Expert trainers ensuring quality education.</li>
+            <li>Real-world projects for hands-on learning.</li>
+            <li>Flexible online and classroom learning options.</li>
+            <li>Affordable fees with installment plans.</li>
           </ul>
         </article>
 
         {/* Call to Action */}
-        <div className="mt-1">
-          <h3 className="text-2xl font-semibold mb-4">
-            Start Your IT Career with Prime Point Academy
-          </h3>
-          <p className="mb-6">
-            Are you serious about building a career in IT? Join our offline/online live courses today and take the first step towards a successful career in UI/UX Design, Full Stack Development, MERN Stack, Java, and SAP (SAP MM &amp; SAP FICO).
-          </p>
+        <div className="mt-12 text-center">
+          <h3 className="text-3xl font-semibold mb-6">Start Your IT Career with Prime Point Academy</h3>
+          <p className="text-lg mb-6">Join our offline/online courses and take the first step towards a successful IT career.</p>
         </div>
       </div>
     </section>

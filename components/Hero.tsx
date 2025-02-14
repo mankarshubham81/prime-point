@@ -13,7 +13,7 @@ export default function Hero() {
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight">
             Welcome to{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#38a9de] to-[#1088ca] bg-clip-text text-transparent">
               Prime Point Academy
             </span>
             <br />
@@ -50,11 +50,11 @@ export default function Hero() {
       </div>
 
       {/* Scrolling Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-8 h-14 border-4 border-blue-400 rounded-3xl">
           <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mx-auto" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
