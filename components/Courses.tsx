@@ -32,7 +32,7 @@ const coursesData = [
     bestseller: true,
   },
   {
-    title: 'MERN Stack Pro',
+    title: 'SAP FICO/SAP MM',
     description:
       'Master MongoDB, Express, React, and Node.js with real-world e-commerce project.',
     slug: 'mern-stack',
@@ -71,14 +71,14 @@ export default function CoursesPage() {
       </Head>
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r rounded-md from-[#0b5fa4] to-[#0d4186] py-1 md:mx-28 text-center text-white">
+      <div className="bg-gradient-to-r rounded-md from-[#0b5fa4] to-[#0d4186] py-1 mt-3 md:mx-28 text-center text-white">
         <h1 className="text-4xl font-bold mb-1">Our Trending IT Courses in Pune</h1>
       </div>
 
       {/* Trending Courses Section */}
       <section
         id="courses-grid"
-        className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
+        className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
         aria-label="Course Catalog"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
