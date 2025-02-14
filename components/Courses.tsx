@@ -34,7 +34,7 @@ const coursesData = [
   {
     title: 'SAP FICO/SAP MM',
     description:
-      'Master MongoDB, Express, React, and Node.js with real-world e-commerce project.',
+      'Master financial management / material management by learning our SAP FICO /SAP MM Course.',
     slug: 'mern-stack',
     image:
       'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',

@@ -105,11 +105,14 @@ const CourseDescription: React.FC = () => {
         </article>
 
         {/* Call to Action */}
-        <div className="mt-12 text-center">
+        <article className=" p-8 mb-1 ">
           <h3 className="text-3xl font-semibold mb-6">Start Your IT Career with Prime Point Academy</h3>
-          <p className="text-lg mb-6">Are you serious about building a career in IT? Well, we have the best solution for you, the Prime Point Academy Pune. You are welcome to join our offline/online live courses today and take the first step towards a successful career in GUI/UX design, Full stack Development, MERN stack, Java, and SAP (SAP MM & SAP FICO).
-</p>
-        </div>
+          <p className="text-lg mb-6">Are you serious about building a career in IT? Well, we have the best solution for you, the Prime Point Academy Pune. You are welcome to join our offline/online live courses today and take the first step towards a successful career in GUI/UX design, Full stack Development, MERN stack, Java, and SAP (SAP MM & SAP FICO).</p>
+        </article>
+        {/* <div className="mt-12 text-center">
+          <p className="text-lg mb-6">Are you serious about building a career in IT? Well, we have the best solution for you, the Prime Point Academy Pune. You are welcome to join our offline/online live courses today and take the first step towards a successful career in GUI/UX design, Full stack Development, MERN stack, Java, and SAP (SAP MM & SAP FICO).</p>
+        <h3 className="text-3xl font-semibold mb-6">Start Your IT Career with Prime Point Academy</h3>
+        </div> */}
       </div>
     </section>
   );

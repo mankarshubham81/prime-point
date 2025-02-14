@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 const courses = [
-  { name: 'UI UX Web Design', slug: 'ui-ux-web-design' },
-  { name: 'Full Stack Java', slug: 'full-stack-java' },
-  { name: 'MERN Stack', slug: 'mern-stack' },
-  { name: 'Full Stack Python', slug: 'full-stack-python' },
-  { name: 'Data Science', slug: 'data-science' },
-  { name: 'Data Analyst', slug: 'data-analyst' },
-  { name: 'Artificial Intelligence', slug: 'artificial-intelligence' },
+  { name: 'UI UX Design', slug: 'ui-ux-web-design' },
+  { name: 'Full Stack', slug: 'full-stack-java' },
+  { name: 'Full Stack Java', slug: 'mern-stack' },
+  { name: 'MERN Stack', slug: 'full-stack-python' },
+  { name: 'SAP', slug: 'data-science' },
+  { name: 'SAP FICO', slug: 'data-analyst' },
+  { name: 'SAP MM', slug: 'artificial-intelligence' },
 ];
 
 const Footer = () => {
