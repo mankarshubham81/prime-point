@@ -6,13 +6,13 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter, FaBars, FaTimes } from 
 import Image from 'next/image';
 
 const coursesList = [
-  { title: 'UI UX Web Design', slug: 'ui-ux-web-design' },
-  { title: 'Full Stack Java', slug: 'full-stack-java' },
-  { title: 'MERN Stack', slug: 'introduction-to-react' },
-  { title: 'Full Stack Python', slug: 'full-stack-python' },
-  { title: 'Data Science', slug: 'data-science' },
-  { title: 'Data Analyst', slug: 'data-analyst' },
-  { title: 'Artificial Intelligence', slug: 'artificial-intelligence' }
+  { title: 'UI UX Design', slug: 'ui-ux-web-design' },
+  { title: 'Full Stack', slug: 'full-stack-java' },
+  { title: 'Full Stack Java', slug: 'introduction-to-react' },
+  { title: 'MERN Stack', slug: 'full-stack-python' },
+  { title: 'SAP', slug: 'data-science' },
+  { title: 'SAP FICO', slug: 'data-analyst' },
+  { title: 'SAP MM', slug: 'artificial-intelligence' }
 ]
 
 export default function Navbar() {
