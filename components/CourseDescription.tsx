@@ -9,7 +9,8 @@ const CourseDescription: React.FC = () => {
           <h3 className="text-3xl font-semibold mb-6">UI/UX Design Course in Pune</h3>
           <p className="font-semibold text-lg mb-4">Join Prime Point Academy - Best UI/UX Design Course in Pune</p>
           <p className="mb-4">
-            UI/UX Design is an essential part of creating visually appealing and user-friendly digital experiences. Let's break it down!
+            UI/UX Design is an essential part of creating visually appealing and user-friendly digital experiences. 
+            Let&apos;s break it down!
           </p>
           <p className="mb-4">
             <span className="font-semibold">UI (User Interface) Design:</span> Focuses on the visual aspects like colors, typography, buttons, and layout to create engaging designs.
