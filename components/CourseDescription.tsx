@@ -14,7 +14,7 @@ const CourseDescription: React.FC = () => {
             <span className="font-semibold">UI (User Interface) Design:</span> It is all about the overall visual appearance and the feel of the application. It includes elements such as colors, typography, buttons, icons, and layout. UI ensures an engaging and attractive design.
           </p>
           <p className="mb-4">
-            <span className="font-semibold">UX (User Experience) Design:</span> It focuses on the user's experience and interactivity with the product. Its primary goal is to improve ease of use & accessibility, which results in great customer satisfaction.
+            <span className="font-semibold">UX (User Experience) Design:</span> It focuses on the user&apos;s experience and interactivity with the product. Its primary goal is to improve ease of use & accessibility, which results in great customer satisfaction.
           </p>
           <p className="mb-4">
             Our UI UX design course in Pune provides in-depth training in tools like Figma, Adobe XD, Sketch, and foundational design principles. If you are a beginner or an experienced designer aiming to upgrade your skills, our ui ux classes in Pune are designed to help you excel in UI/UX design through practical projects and industry exposure.
@@ -38,14 +38,14 @@ const CourseDescription: React.FC = () => {
         <article className="p-8 mb-1">
           <h3 className="text-3xl font-semibold mb-6">Industry-Oriented Full Stack Developer Course in Pune</h3>
           <p className="mb-4">
-            The IT industry's requirements for Full Stack Developers are very high as of now. Our Full Stack Developer course in Pune prepares students by teaching essential skills in both front-end and back-end development. Our syllabus includes all trending technologies as per the latest industry requirements. Learn from industry expert trainers with practical training by working on live projects and become a professional full stack developer.
+            The IT industry&apos;s requirements for Full Stack Developers are very high as of now. Our Full Stack Developer course in Pune prepares students by teaching essential skills in both front-end and back-end development. Our syllabus includes all trending technologies as per the latest industry requirements. Learn from industry expert trainers with practical training by working on live projects and become a professional full stack developer.
           </p>
           <p className="text-2xl font-semibold mb-4">
             Key Features of Our Full Stack Classes in Pune:
           </p>
           <ul className="list-disc list-inside mb-6 ml-4 space-y-2">
             <li>Detailed training of front-end and back-end technologies.</li>
-            <li>Practical training through the real world's live project.</li>
+            <li>Practical training through the real world&apos;s live project.</li>
             <li>Career guidance and soft skills training.</li>
             <li>Access to industry expert mentors and one-on-one sessions</li>
           </ul>
