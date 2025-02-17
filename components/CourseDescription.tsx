@@ -97,7 +97,7 @@ const CourseDescription: React.FC = () => {
             <li>100% Placement Assistance with tie-ups in top IT companies.</li>
             <li>Experienced Industry Trainers to ensure quality education.</li>
             <li>Real-world Projects and case studies for hands-on learning.</li>
-            <li>Flexible Learning Options – classroom and online training available.</li>
+            <li>Flexible Learning Options - classroom and online training available.</li>
             <li>Affordable Fee Structure with easy installment options.</li>
             <li>Career Guidance & Mentorship for lifelong career support.</li>
             <li>Soft Skills training & Interview Preparation for better job prospects.</li>

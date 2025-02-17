@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import BookDemoForm from '../components/BookDemoForm'
 import Courses from '../components/Courses'
 import Testimonial from '../components/Testimonial'
-import Location from '../components/Location'
+// import Location from '../components/Location'
 import FaqSection from '../components/FaqSection'
 import CourseDescription from '@/components/CourseDescription'
 
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <FaqSection />
-      <Location />
+      {/* <Location /> */}
 
     </div>
   )
